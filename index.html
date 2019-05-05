@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="grailedG.jpg">
+    <link href="style.css" type="text/css" rel="stylesheet"></link>
+    <title>SJ</title>
+  </head>
+  <body>
+    <div id="headerScrollBar">
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01"></img>
+      <!-- Modal Caption (Image Text) -->
+      <div id="buttons">
+        <button type="button" id="previous" onclick="switchBack()" value="0">Previous</button>
+        <div id="caption"></div>
+        <button type="button" id="next" onclick="switchNext()" value="0">Next</button>
+      </div>
+    </div>
+    <div id="total">
+        <div class="PickedRow">
+          <div class="picRow">
+              <img class="pics" id="1" src="sj1.png" alt="Phone Branding" width="300" height="450" onclick="image(this)"></img>
+              <div class="middle">
+                <div class="text">Phone Branding</div>
+              </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="2" src="sj2.png" alt="Lookbook Design" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">Lookbook Design</div>
+            </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="3" src="sj3.png" alt="Alternate Cover" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">Alternate Cover</div>
+            </div>
+          </div>
+        </div>
+        <div class="PickedRow">
+          <div class="picRow">
+            <img class="pics" id="4" src="sj4.png" alt="Wainwright Brochure" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">Wainwright Brochure</div>
+            </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="5" src="sj5.png" alt="Un-american" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">Un-american</div>
+            </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="6"src="sj6.png" alt="SJ.brand Sweatshirt" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">SJ.brand Sweatshirt</div>
+            </div>
+          </div>
+        </div>
+        <div class="PickedRow">
+          <div class="picRow">
+            <img class="pics" id="7"src="sj7.png" alt="GenK" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">GenK</div>
+            </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="8" src="sj8.png" alt="Drums Animation" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">Drums Animation</div>
+            </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="9"src="sj9.png" alt="Brockhampton Visualizer" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">Brockhampton Visualizer</div>
+            </div>
+          </div>
+        </div>
+        <div class="PickedRow">
+          <div class="picRow">
+            <img class="pics" id="10" src="sj10.png" alt="SJ.brand Shirt" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">SJ.brand Shirt</div>
+            </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="11" src="sj11.png" alt="SJ.brand Sweatshirt" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">SJ.brand Sweatshirt</div>
+            </div>
+          </div>
+          <div class="picRow">
+            <img class="pics" id="12" src="sj12.png" alt="SJ" width="300" height="450" onclick="image(this)"></img>
+            <div class="middle">
+              <div class="text">SJ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
