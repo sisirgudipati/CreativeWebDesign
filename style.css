@@ -1,3 +1,9 @@
+#banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
+}
 
 #headerScrollBar {
   display: flex;
@@ -20,6 +26,7 @@
 
 #total{
   margin-left: 10%;
+  margin-top: 4%;
 }
 
 .picRow{
