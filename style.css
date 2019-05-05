@@ -1,8 +1,60 @@
+#resume{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+#aboutInfo{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  margin-left: 18%;
+}
+
+#aboutPar{
+  width: 25%;
+}
+
+#sjFace{
+  margin-left: 3%;
+}
+
+.aboutTitle{
+  font-family: 'Prata', serif;
+  font-size: 30px;
+  margin-left: 46.5%;
+}
+
+.storeTitle{
+  font-family: 'Prata', serif;
+  font-size: 30px;
+  margin-left: 46.5%;
+}
+
+.workTitle{
+  font-family: 'Prata', serif;
+  font-size: 30px;
+  margin-left: 36%;
+}
+
+
 #banner{
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 10%;
+}
+
+#bannerTitle{
+  color: white;
+  font-family: 'Prata', serif;
+  font-size: 22px;
 }
 
 #headerScrollBar {
@@ -24,7 +76,7 @@
   z-index: 1;
 }
 
-#total{
+#work{
   margin-left: 10%;
   margin-top: 4%;
 }
@@ -56,7 +108,6 @@
 
 .pics{
   margin-left: 30%;
-  margin-top: 20px;
   opacity: 1;
   display: block;
   transition: .5s ease;

@@ -1,29 +1,34 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--<link rel="icon" type="image/ico" href="grailedG.jpg">-->
+    <link rel="icon" type="image/ico" href="ghost.png">
+    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet"></link>
     <title>SJ</title>
   </head>
   <body>
     <div id="headerScrollBar">
+      <span id="bannerTitle">DRYCLEAN ONLY</span>
+    </div>
+    <div id="banner">
+      <img src="washer.PNG" alt="washerPic" id="washerPic" width="650" height="650"></img>
     </div>
     <div id="myModal" class="modal">
-      <!-- The Close Button -->
       <span class="close">&times;</span>
-      <!-- Modal Content (The Image) -->
       <img class="modal-content" id="img01"></img>
-      <!-- Modal Caption (Image Text) -->
       <div id="buttons">
         <button type="button" id="previous" onclick="switchBack()" value="0">Previous</button>
         <div id="caption"></div>
         <button type="button" id="next" onclick="switchNext()" value="0">Next</button>
       </div>
     </div>
-    <div id="banner">
-      <img src="washer.PNG" alt="washerPic" id="washerPic" width="650" height="650"></img>
+    <hr>
+    <div id="store">
+      <h1 class="storeTitle">STORE</h1>
     </div>
-    <div id="total">
+    <hr>
+    <div id="work">
+      <h1 class="workTitle">DESIGN WORK</h1>
         <div class="PickedRow">
           <div class="picRow">
               <img class="pics" id="1" src="sj1.png" alt="Phone Branding" width="300" height="450" onclick="image(this)"></img>
@@ -104,7 +109,17 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
+    <hr>
+    <div id="about">
+      <h1 class="aboutTitle">ABOUT</h1>
+      <div id ="aboutInfo">
+      <p id="aboutPar">My name is Sang-Jin Lee and I am a 21 year old visual designer from Atlanta, GA currently pursing a BFA in Communication Design from the Sam Fox School of Design & Visual Arts. I love to know what ignites people's passions - what pushes people to and beyond their limits for the sake of their own sanity and work. I hope this site serves as a brief window into some of my own passions. Outside of design I love connecting with people; whether that be through conversation,   musical performance, or design. In my free time I enjoy film, photography, dogs, and playing drums for my band. I grew up going to concerts - so music and performance are a huge part of my life. Work and Employment Inquiries: sang-jinlee@wustl.edu
+      </p>
+      <img id="sjFace" src="sjFace.jpg" alt="picOfSj" width="600" height="430"></img>
+      <div>
+    </div>
+    <hr>
     <script src="main.js"></script>
   </body>
 </html>
