@@ -19,6 +19,25 @@ span.onclick = function(){
   modal.style.display = "none";
 }
 
+function getYe(){
+  let quote ="";
+  var xhttp0 = new XMLHttpRequest();
+  xhttp0.onreadystatechange=function(){
+    if(this.readyState==4 && this.status==200){
+      quote=JSON.parse(this.responseText).quote;
+      document.getElementById("yeQ").innerHTML=quote;
+      document.getElementById("ye").style.display="flex";
+    }
+  };
+  xhttp0.open("GET", "https://api.kanye.rest", true);
+  xhttp0.send();
+}
+
+function closeYe(){
+  document.getElementById("ye").style.display="none";
+}
+
+
 function switchNext(){
   let nextButton = document.getElementById("next");
   let id = nextButton.value;
