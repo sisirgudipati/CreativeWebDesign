@@ -13,6 +13,25 @@ function image(img){
   captionText.innerHTML = img.alt;
 
 }
+
+function getYe(){
+  let quote ="";
+  var xhttp0 = new XMLHttpRequest();
+  xhttp0.onreadystatechange=function(){
+    if(this.readyState==4 && this.status==200){
+      quote=JSON.parse(this.responseText).quote;
+      document.getElementById("yeQ").innerHTML=quote;
+      document.getElementById("ye").style.display="flex";
+    }
+  };
+  xhttp0.open("GET", "https://api.kanye.rest", true);
+  xhttp0.send();
+}
+
+function closeYe(){
+  document.getElementById("ye").style.display="none";
+}
+
 let span = document.getElementsByClassName("close")[0];
 span.onclick = function(){
   let modal = document.getElementById("myModal");
