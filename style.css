@@ -74,6 +74,7 @@
   border: solid #DCDCDC;
   border-width: thin;
   z-index: 1;
+  height:75px;
 }
 
 #work{
@@ -214,4 +215,17 @@
     border-radius: 5px;
     user-select: none;
     margin-right: 30%;
+}
+#logo{
+  height:100%;
+}
+
+#logo img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.productRow{
+  display: flex;
+  flex-direction: row;
 }
