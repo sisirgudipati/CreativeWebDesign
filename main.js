@@ -43,3 +43,19 @@ function switchBack(){
   let img = document.getElementById(id);
   image(img);
 }
+
+function sendEmail(){
+  const api_key = "b2a7eede87fb5ed77a14f4a7a0c8f6d6-e566273b-35b73641";
+  const mailgun = require("mailgun-js");
+  const DOMAIN = 'YOUR_DOMAIN_NAME';
+  const mg = mailgun({apiKey: api_key, domain: DOMAIN});
+  const data = {
+  	from: 'Excited User <me@samples.mailgun.org>',
+  	to: 'bar@example.com, YOU@YOUR_DOMAIN_NAME',
+  	subject: 'Hello',
+  	text: 'Testing some Mailgun awesomness!'
+  };
+  mg.messages().send(data, function (error, body) {
+  	console.log(body);
+  });
+}
